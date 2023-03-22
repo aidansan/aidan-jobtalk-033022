@@ -23,6 +23,7 @@ class LinkedList:
         Removes the list node from the front of the linked list, will throw an error if list is empty
         '''
 
+# ["Cream Cheese", "Plain", "Chicken Salad"] 
 def print_linked_list(linked_list):
     '''
     Prints the values in the linked list separated by spaces
@@ -30,31 +31,18 @@ def print_linked_list(linked_list):
     current = linked_list.head
     
     while current is not None:
-        print(current.val, end=' ')
+        print(current, end=' ')
         current = current.next
     print()
-
-def sum_linked_list(linked_list):
-    '''
-    Adds together all of the elements in the linked list
-    '''
-
-    # Sli.do: What variables do we need to set up / make?
-
-    # Keep going until we reach the end
-
-    # Add to our sum
-    # Move to the next node
-    return -1
-    
+    # sli.do: What is the mistake?
 
 l = LinkedList()
 
-print('Adding 3, 6, 2, 5 to linked list')
-l.add_front(3)
-l.add_front(6)
-l.add_front(2)
-l.add_front(5)
+print('Adding to linked list')
+l.add_front("Chicken Salad")
+l.add_front("Plain")
+l.add_front("Cream Cheese")
+l.add_front("Ham + Egg")
 
 print_linked_list(l)
 # Slido: What do we think the first node's value will be?
@@ -63,6 +51,3 @@ print_linked_list(l)
 # l.remove_front()
 # print_linked_list(l)
 
-
-# print('Sum of the linked list')
-# print(sum_linked_list(l))
