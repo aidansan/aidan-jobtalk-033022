@@ -36,18 +36,21 @@ def print_linked_list(linked_list):
     print()
     # sli.do: What is the mistake?
 
-#l = LinkedList()
+def main():
+    l = LinkedList()
 
-# print('Adding to linked list')
-# l.add_front("Chicken Salad")
-# l.add_front("Plain")
-# l.add_front("Cream Cheese")
-# l.add_front("Ham + Egg")
+    print('Adding to linked list')
+    l.add_front("Chicken Salad")
+    # l.add_front("Plain")
+    # l.add_front("Cream Cheese")
+    # l.add_front("Ham + Egg")
+    print_linked_list(l)
+    
+    # Slido: What do we think the first node's value will be?
 
-# print_linked_list(l)
-# Slido: What do we think the first node's value will be?
+    # print('Removing from linked list')
+    # l.remove_front()
+    # print_linked_list(l)
 
-# print('Removing from linked list')
-# l.remove_front()
-# print_linked_list(l)
-
+if __name__ == '__main__':
+    main()
