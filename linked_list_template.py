@@ -26,7 +26,7 @@ class LinkedList:
 # ["Cream Cheese", "Plain", "Chicken Salad"] 
 def print_linked_list(linked_list):
     '''
-    Prints the values in the linked list separated by spaces
+    Prints the values in the linked list separated by commas
     '''
     current = linked_list.head
     
